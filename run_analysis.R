@@ -8,7 +8,6 @@
 # Load raw data - it is assumed the default directory is set to "UCI HAR Dataset"
 # directory created as the result of unzipping the project dataset
 #
-library(data.table)
 library(plyr)
 
 train.subject = read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE)
@@ -54,20 +53,20 @@ data.mean_std = data.mean_std[,-1]
 #
 # Step 4: Appropriately labels the data set with descriptive variable names. 
 #
-names(data.mean_std) = gsub('\\(|\\)',"",names(data.mean_std), perl = TRUE)
-names(data.mean_std) = make.names(names(data.mean_std))
-
+names(data.mean_std) = gsub('^t',"TimeDomain.",names(data.mean_std))
+names(data.mean_std) = gsub('^f',"FrequencyDomain.",names(data.mean_std))
+names(data.mean_std) = gsub('BodyBody',"Body",names(data.mean_std))
 names(data.mean_std) = gsub('Acc',"Acceleration",names(data.mean_std))
 names(data.mean_std) = gsub('GyroJerk',"AngularAcceleration",names(data.mean_std))
 names(data.mean_std) = gsub('Gyro',"AngularSpeed",names(data.mean_std))
-names(data.mean_std) = gsub('BodyBody',"Body",names(data.mean_std))
 names(data.mean_std) = gsub('Mag',"Magnitude",names(data.mean_std))
-names(data.mean_std) = gsub('^t',"TimeDomain.",names(data.mean_std))
-names(data.mean_std) = gsub('^f',"FrequencyDomain.",names(data.mean_std))
-names(data.mean_std) = gsub('\\.mean',".Mean",names(data.mean_std), ignore.case = TRUE)
-names(data.mean_std) = gsub('\\.std',".StandardDeviation",names(data.mean_std), ignore.case = TRUE)
-names(data.mean_std) = gsub('Freq\\.',"Frequency.",names(data.mean_std), ignore.case = TRUE)
-names(data.mean_std) = gsub('Freq$',"Frequency",names(data.mean_std), ignore.case = TRUE)
+names(data.mean_std) = gsub('meanFreq',"meanFrequency",names(data.mean_std), ignore.case = TRUE)
+names(data.mean_std) = gsub('std',"StandardDeviation",names(data.mean_std))
+
+#
+# Remove pran's ()
+#
+names(data.mean_std) = gsub('\\(|\\)',"",names(data.mean_std), perl = TRUE)
 
 #
 # Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
