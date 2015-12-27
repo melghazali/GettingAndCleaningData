@@ -39,6 +39,7 @@ Note 2: While loading the activities labels, add column names
 * data = rbind(train.all, test.all)
 
 Note 3: dim(data) should display "[1] 10299   563"
+
 Note 4: Use "head(data)" to review results and capture the indices of the last two columns, then add labels
 
 * labels = rbind(activity.features)[,2]
