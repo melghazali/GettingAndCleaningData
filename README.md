@@ -6,9 +6,7 @@ https://github.com/melghazali/GettingAndCleaningData.git
 
 Otherwise, follow the following steps to generate the tidy data file.
 
-### Step 0: Load raw data
-Before running this script, perform the following:
-
+### Getting the raw data and run_analysis.R
 * Download the raw data from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
    to local directory (e.g, C:\project)
 * Unzip the file into C:\project which yield:
@@ -19,10 +17,10 @@ Before running this script, perform the following:
 * Source run_analysis.R
 * The tidy text file will be written to C:\project\HAR_AVG_by_Subject_Activities.txt
 
-### Load needed package
+### Step-by-step inside "run_analysis.R
 library(plyr)
 
-### Load each data file into a data frame object
+### Step 0: Load each data file into a data frame object
 * train.subject = read.table("UCI HAR Dataset/train/subject_train.txt", header = FALSE)
 * train.X = read.table("UCI HAR Dataset/train/X_train.txt", header = FALSE)
 * train.Y = read.table("UCI HAR Dataset/train/y_train.txt", header = FALSE)
