@@ -1,4 +1,4 @@
-# Code Book File: HAR_AVG_by_Subject_Activities.txt
+## Code Book File: HAR_AVG_by_Subject_Activities.txt
 
 ## Original Data Collection URL
 https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
@@ -14,81 +14,76 @@ Finally a Fast Fourier Transform (FFT) was applied to some of these signals prod
 These signals were used to estimate variables of the feature vector for each pattern:  
 '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-tBodyAcc-XYZ
-tGravityAcc-XYZ
-tBodyAccJerk-XYZ
-tBodyGyro-XYZ
-tBodyGyroJerk-XYZ
-tBodyAccMag
-tGravityAccMag
-tBodyAccJerkMag
-tBodyGyroMag
-tBodyGyroJerkMag
-fBodyAcc-XYZ
-fBodyAccJerk-XYZ
-fBodyGyro-XYZ
-fBodyAccMag
-fBodyAccJerkMag
-fBodyGyroMag
-fBodyGyroJerkMag
+* tBodyAcc-XYZ
+* tGravityAcc-XYZ
+* tBodyAccJerk-XYZ
+* tBodyGyro-XYZ
+* tBodyGyroJerk-XYZ
+* tBodyAccMag
+* tGravityAccMag
+* tBodyAccJerkMag
+* tBodyGyroMag
+* tBodyGyroJerkMag
+* fBodyAcc-XYZ
+* fBodyAccJerk-XYZ
+* fBodyGyro-XYZ
+* fBodyAccMag
+* fBodyAccJerkMag
+* fBodyGyroMag
+* fBodyGyroJerkMag
 
 The set of variables that were estimated from these signals are: 
-
-mean(): Mean value
-std(): Standard deviation
-meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+* mean(): Mean value
+* std(): Standard deviation
+* meanFreq(): Weighted average of the frequency components to obtain a mean frequency
 
 Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
-
-tBodyAccMean
-tBodyAccJerkMean
-tBodyGyroMean
-tBodyGyroJerkMean
+* tBodyAccMean
+* tBodyAccJerkMean
+* tBodyGyroMean
+* tBodyGyroJerkMean
 
 ## Tidy Data Features And Raw Data Transformation
 
 ### This project makes use of only the following training, test, features and activitiy labels data files:
+* "UCI HAR Dataset/train/subject_train.txt"
+* "UCI HAR Dataset/train/X_train.txt"
+* "UCI HAR Dataset/train/y_train.txt"
+* "UCI HAR Dataset/test/subject_test.txt"
+* "UCI HAR Dataset/test/X_test.txt"
+* "UCI HAR Dataset/test/y_test.txt"
+* "UCI HAR Dataset/features.txt"
+* "UCI HAR Dataset/activity_labels.txt"
 
-"UCI HAR Dataset/train/subject_train.txt"
-"UCI HAR Dataset/train/X_train.txt"
-"UCI HAR Dataset/train/y_train.txt"
+The first transformation to the raw data happens while loading the activities labels. The "Activity.ID" and "Subject" column names are added to enbale the use of join() operation by Activity.ID in step 3.
 
-"UCI HAR Dataset/test/subject_test.txt"
-"UCI HAR Dataset/test/X_test.txt"
-"UCI HAR Dataset/test/y_test.txt"
+Step 1: Merge the training and the test sets to create short form data set through columnwise binding, then rowwise binding.
 
-"UCI HAR Dataset/features.txt"
-"UCI HAR Dataset/activity_labels.txt"
+Step 2: Extracts only the measurements on the mean and standard deviation for each measurement per subject & activity
 
-### The first transformation to the raw data happens while loading the activities labels. The "Activity.ID" and "Subject" column names are added to enbale the use of join() operation by Activity.ID in step 3.
+Step 3: Use descriptive activity names to name the activities in the data set. First, joint the data with the activity labels and delete the last column created by join operation
 
-### Step 1: Merge the training and the test sets to create short form data set through columnwise binding, then rowwise binding.
+Step 4: Appropriately labels the data set with descriptive variable names using the following transformation: 
 
-### Step 2: Extracts only the measurements on the mean and standard deviation for each measurement per subject & activity
-
-### Step 3: Use descriptive activity names to name the activities in the data set. First, joint the data with the activity labels and delete the last column created by join operation
-
-### Step 4: Appropriately labels the data set with descriptive variable names using the following transformation: 
-
-"t" -> "TimeDomain"
-"f" -> "FrequencyDomain"
-"BodyBody" -> "Body"
-"Acc" -> "Acceleration"
-"GyroJerk" -> "AngularAcceleration"
-"Gyro" -> "AngularSpeed"
-"Mag" -> "Magnitude"
-"meanFreq" -> "meanFrequency"
-"std" -> "StandardDeviation"
+* "t" -> "TimeDomain"
+* "f" -> "FrequencyDomain"
+* "BodyBody" -> "Body"
+* "Acc" -> "Acceleration"
+* "GyroJerk" -> "AngularAcceleration"
+* "Gyro" -> "AngularSpeed"
+* "Mag" -> "Magnitude"
+* "meanFreq" -> "meanFrequency"
+* "std" -> "StandardDeviation"
 
 Finally, removing pran's ()
 
-### Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-### Write the tidy data to text file without the default row names
+Write the tidy data to text file without the default row names
 
-### Feature Names Transformation Table
+Feature Names Transformation Table
 
-Tidy Data Feature Name                                            | Data Type, and Original Feature Computed with mean() or std()                                
+Tidy Data Feature Name                                            | Data Type, and Original Feature Computed with mean() or std()
 ----------------------------------------------------------------- | ------------------------------------------------------------- 
 TimeDomain.BodyAcceleration-mean-X                                | num, tBodyAcc-X mean value  
 TimeDomain.BodyAcceleration-mean-Y                                | num, tBodyAcc-Y mean value    
