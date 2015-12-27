@@ -85,84 +85,84 @@ Feature Names Transformation Table
 
 Tidy Data Feature Name                                            | Data Type, and Original Feature Computed with mean() or std()
 ----------------------------------------------------------------- | ------------------------------------------------------------- 
-TimeDomain.BodyAcceleration-mean-X                                | num, tBodyAcc-X mean value  
-TimeDomain.BodyAcceleration-mean-Y                                | num, tBodyAcc-Y mean value    
-TimeDomain.BodyAcceleration-mean-Z                                | num, tBodyAcc-Z mean value    
-TimeDomain.BodyAcceleration-StandardDeviation-X                   | num, tBodyAcc-X standard deviation value    
-TimeDomain.BodyAcceleration-StandardDeviation-Y                   | num, tBodyAcc-Y standard deviation value      
-TimeDomain.BodyAcceleration-StandardDeviation-Z                   | num, tBodyAcc-Z standard deviation value      
-TimeDomain.GravityAcceleration-mean-X                             | num, tGravityAcc-X mean value 
-TimeDomain.GravityAcceleration-mean-Y                             | num, tGravityAcc-Y mean value 
-TimeDomain.GravityAcceleration-mean-Z                             | num, tGravityAcc-Z mean value   
-TimeDomain.GravityAcceleration-StandardDeviation-X                | num, tGravityAcc-X standard deviation value      
-TimeDomain.GravityAcceleration-StandardDeviation-Y                | num, tGravityAcc-Y standard deviation value     
-TimeDomain.GravityAcceleration-StandardDeviation-Z                | num, tGravityAcc-Z standard deviation value     
-TimeDomain.BodyAccelerationJerk-mean-X                            | num, tBodyAccJerk-X mean value  
-TimeDomain.BodyAccelerationJerk-mean-Y                            | num, tBodyAccJerk-Y mean value   
-TimeDomain.BodyAccelerationJerk-mean-Z                            | num, tBodyAccJerk-Z mean value   
-TimeDomain.BodyAccelerationJerk-StandardDeviation-X               | num, tBodyAccJerk-X StandardDeviation value   
-TimeDomain.BodyAccelerationJerk-StandardDeviation-Y               | num, tBodyAccJerk-Y StandardDeviation value    
-TimeDomain.BodyAccelerationJerk-StandardDeviation-Z               | num, tBodyAccJerk-Z StandardDeviation value     
-TimeDomain.BodyAngularSpeed-mean-X                                | num, tBodyGyro-X mean value  
-TimeDomain.BodyAngularSpeed-mean-Y                                | num, tBodyGyro-Y mean value   
-TimeDomain.BodyAngularSpeed-mean-Z                                | num, tBodyGyro-Z mean value   
-TimeDomain.BodyAngularSpeed-StandardDeviation-X                   | num, tBodyGyro-X StandardDeviation value   
-TimeDomain.BodyAngularSpeed-StandardDeviation-Y                   | num, tBodyGyro-Y StandardDeviation value  
-TimeDomain.BodyAngularSpeed-StandardDeviation-Z                   | num, tBodyGyro-Z StandardDeviation value  
-TimeDomain.BodyAngularAcceleration-mean-X                         | num, tBodyGyroJerk-X mean value    
-TimeDomain.BodyAngularAcceleration-mean-Y                         | num, tBodyGyroJerk-Y mean value    
-TimeDomain.BodyAngularAcceleration-mean-Z                         | num, tBodyGyroJerk-Z mean value  
-TimeDomain.BodyAngularAcceleration-StandardDeviation-X            | num, tBodyGyroJerk-X Standard Deviation value  
-TimeDomain.BodyAngularAcceleration-StandardDeviation-Y            | num, tBodyGyroJerk-Y Standard Deviation value   
-TimeDomain.BodyAngularAcceleration-StandardDeviation-Z            | num, tBodyGyroJerk-Z Standard Deviation value  
-TimeDomain.BodyAccelerationMagnitude-mean                         | num, tBodyAccMag mean value   
-TimeDomain.BodyAccelerationMagnitude-StandardDeviation            | num, tBodyAccMag Standard Deviation value   
-TimeDomain.GravityAccelerationMagnitude-mean                      | num, tGravityAccMag mean value  
-TimeDomain.GravityAccelerationMagnitude-StandardDeviation         | num, tGravityAccMag Standard Deviation value   
-TimeDomain.BodyAccelerationJerkMagnitude-mean                     | num, tBodyAccJerkMag mean value   
-TimeDomain.BodyAccelerationJerkMagnitude-StandardDeviation        | num, tBodyAccJerkMag Standard Deviation value  
-TimeDomain.BodyAngularSpeedMagnitude-mean                         | num, tBodyGyroMag mean value  
-TimeDomain.BodyAngularSpeedMagnitude-StandardDeviation            | num, tBodyGyroMag Standard Deviation value  
-TimeDomain.BodyAngularAccelerationMagnitude-mean                  | num, tBodyGyroJerkMag mean value  
-TimeDomain.BodyAngularAccelerationMagnitude-StandardDeviation     | num, tBodyGyroJerkMag Standard Deviation value  
-FrequencyDomain.BodyAcceleration-mean-X                           | num, fBodyAcc-X mean value  
-FrequencyDomain.BodyAcceleration-mean-Y                           | num, fBodyAcc-Y mean value   
-FrequencyDomain.BodyAcceleration-mean-Z                           | num, fBodyAcc-Z mean value    
-FrequencyDomain.BodyAcceleration-StandardDeviation-X              | num, fBodyAcc-X Standard Deviation value  
-FrequencyDomain.BodyAcceleration-StandardDeviation-Y              | num, fBodyAcc-Y Standard Deviation value  
-FrequencyDomain.BodyAcceleration-StandardDeviation-Z              | num, fBodyAcc-Z Standard Deviation value  
-FrequencyDomain.BodyAcceleration-meanFrequency-X                  | num, fBodyAcc-meanFreq-X  
-FrequencyDomain.BodyAcceleration-meanFrequency-Y                  | num, fBodyAcc-meanFreq-Y   
-FrequencyDomain.BodyAcceleration-meanFrequency-Z                  | num, fBodyAcc-meanFreq-Z   
-FrequencyDomain.BodyAccelerationJerk-mean-X                       | num, fBodyAccJerk-X mean value  
-FrequencyDomain.BodyAccelerationJerk-mean-Y                       | num, fBodyAccJerk-Y mean value   
-FrequencyDomain.BodyAccelerationJerk-mean-Z                       | num, fBodyAccJerk-X mean value   
-FrequencyDomain.BodyAccelerationJerk-StandardDeviation-X          | num, fBodyAccJerk-X Standard Deviation value  
-FrequencyDomain.BodyAccelerationJerk-StandardDeviation-Y          | num, fBodyAccJerk-Y Standard Deviation value  
-FrequencyDomain.BodyAccelerationJerk-StandardDeviation-Z          | num, fBodyAccJerk-Z Standard Deviation value 
-FrequencyDomain.BodyAccelerationJerk-meanFrequency-X              | num, fBodyAccJerk-meanFreq-X  
-FrequencyDomain.BodyAccelerationJerk-meanFrequency-Y              | num, fBodyAccJerk-meanFreq-Y   
-FrequencyDomain.BodyAccelerationJerk-meanFrequency-Z              | num, fBodyAccJerk-meanFreq-Z   
-FrequencyDomain.BodyAngularSpeed-mean-X                           | num, fBodyGyro-X mean value  
-FrequencyDomain.BodyAngularSpeed-mean-Y                           | num, fBodyGyro-Y mean value  
-FrequencyDomain.BodyAngularSpeed-mean-Z                           | num, fBodyGyro-Z mean value  
-FrequencyDomain.BodyAngularSpeed-StandardDeviation-X              | num, fBodyGyro-X Standard Deviation value  
-FrequencyDomain.BodyAngularSpeed-StandardDeviation-Y              | num, fBodyGyro-Y Standard Deviation value   
-FrequencyDomain.BodyAngularSpeed-StandardDeviation-Z              | num, fBodyGyro-Z Standard Deviation value   
-FrequencyDomain.BodyAngularSpeed-meanFrequency-X                  | num, fBodyGyro-meanFreq-X  
-FrequencyDomain.BodyAngularSpeed-meanFrequency-Y                  | num, fBodyGyro-meanFreq-Y   
-FrequencyDomain.BodyAngularSpeed-meanFrequency-Z                  | num, fBodyGyro-meanFreq-Z    
-FrequencyDomain.BodyAccelerationMagnitude-mean                    | num, fBodyAccMag mean value   
-FrequencyDomain.BodyAccelerationMagnitude-StandardDeviation       | num, fBodyAccMag Standard Deviation value   
-FrequencyDomain.BodyAccelerationMagnitude-meanFrequency           | num, fBodyAccMag-meanFreq   
-FrequencyDomain.BodyAccelerationJerkMagnitude-mean                | num, fBodyAccJerkMag mean value  
-FrequencyDomain.BodyAccelerationJerkMagnitude-StandardDeviation   | num, fBodyAccMag Standard Deviation value  
-FrequencyDomain.BodyAccelerationJerkMagnitude-meanFrequency       | num, fBodyAccJerkMag-meanFreq  
-FrequencyDomain.BodyAngularSpeedMagnitude-mean                    | num, fBodyGyroMag mean value  
-FrequencyDomain.BodyAngularSpeedMagnitude-StandardDeviation       | num, fBodyGyroMag Standard Deviation value  
-FrequencyDomain.BodyAngularSpeedMagnitude-meanFrequency           | num, fBodyGyroMag-meanFreq  
-FrequencyDomain.BodyAngularAccelerationMagnitude-mean             | num, fBodyGyroJerkMag mean value  
-FrequencyDomain.BodyAngularAccelerationMagnitude-StandardDeviation| num, fBodyGyroJerkMag Standard Deviation value 
-FrequencyDomain.BodyAngularAccelerationMagnitude-meanFrequency    | num, fBodyGyroJerkMag-meanFreq  
+TimeDomain.BodyAcceleration.mean.X                                | num, tBodyAcc-X mean value  
+TimeDomain.BodyAcceleration.mean.Y                                | num, tBodyAcc-Y mean value    
+TimeDomain.BodyAcceleration.mean.Z                                | num, tBodyAcc-Z mean value    
+TimeDomain.BodyAcceleration.StandardDeviation.X                   | num, tBodyAcc-X standard deviation value    
+TimeDomain.BodyAcceleration.StandardDeviation.Y                   | num, tBodyAcc-Y standard deviation value      
+TimeDomain.BodyAcceleration.StandardDeviation.Z                   | num, tBodyAcc-Z standard deviation value      
+TimeDomain.GravityAcceleration.mean.X                             | num, tGravityAcc-X mean value 
+TimeDomain.GravityAcceleration.mean.Y                             | num, tGravityAcc-Y mean value 
+TimeDomain.GravityAcceleration.mean.Z                             | num, tGravityAcc-Z mean value   
+TimeDomain.GravityAcceleration.StandardDeviation.X                | num, tGravityAcc-X standard deviation value      
+TimeDomain.GravityAcceleration.StandardDeviation.Y                | num, tGravityAcc-Y standard deviation value     
+TimeDomain.GravityAcceleration.StandardDeviation.Z                | num, tGravityAcc-Z standard deviation value     
+TimeDomain.BodyAccelerationJerk.mean.X                            | num, tBodyAccJerk-X mean value  
+TimeDomain.BodyAccelerationJerk.mean.Y                            | num, tBodyAccJerk-Y mean value   
+TimeDomain.BodyAccelerationJerk.mean.Z                            | num, tBodyAccJerk-Z mean value   
+TimeDomain.BodyAccelerationJerk.StandardDeviation.X               | num, tBodyAccJerk-X StandardDeviation value   
+TimeDomain.BodyAccelerationJerk.StandardDeviation.Y               | num, tBodyAccJerk-Y StandardDeviation value    
+TimeDomain.BodyAccelerationJerk.StandardDeviation.Z               | num, tBodyAccJerk-Z StandardDeviation value     
+TimeDomain.BodyAngularSpeed.mean.X                                | num, tBodyGyro-X mean value  
+TimeDomain.BodyAngularSpeed.mean.Y                                | num, tBodyGyro-Y mean value   
+TimeDomain.BodyAngularSpeed.mean.Z                                | num, tBodyGyro-Z mean value   
+TimeDomain.BodyAngularSpeed.StandardDeviation.X                   | num, tBodyGyro-X StandardDeviation value   
+TimeDomain.BodyAngularSpeed.StandardDeviation.Y                   | num, tBodyGyro-Y StandardDeviation value  
+TimeDomain.BodyAngularSpeed.StandardDeviation.Z                   | num, tBodyGyro-Z StandardDeviation value  
+TimeDomain.BodyAngularAcceleration.mean.X                         | num, tBodyGyroJerk-X mean value    
+TimeDomain.BodyAngularAcceleration.mean.Y                         | num, tBodyGyroJerk-Y mean value    
+TimeDomain.BodyAngularAcceleration.mean.Z                         | num, tBodyGyroJerk-Z mean value  
+TimeDomain.BodyAngularAcceleration.StandardDeviation.X            | num, tBodyGyroJerk-X Standard Deviation value  
+TimeDomain.BodyAngularAcceleration.StandardDeviation.Y            | num, tBodyGyroJerk-Y Standard Deviation value   
+TimeDomain.BodyAngularAcceleration.StandardDeviation.Z            | num, tBodyGyroJerk-Z Standard Deviation value  
+TimeDomain.BodyAccelerationMagnitude.mean                         | num, tBodyAccMag mean value   
+TimeDomain.BodyAccelerationMagnitude.StandardDeviation            | num, tBodyAccMag Standard Deviation value   
+TimeDomain.GravityAccelerationMagnitude.mean                      | num, tGravityAccMag mean value  
+TimeDomain.GravityAccelerationMagnitude.StandardDeviation         | num, tGravityAccMag Standard Deviation value   
+TimeDomain.BodyAccelerationJerkMagnitude.mean                     | num, tBodyAccJerkMag mean value   
+TimeDomain.BodyAccelerationJerkMagnitude.StandardDeviation        | num, tBodyAccJerkMag Standard Deviation value  
+TimeDomain.BodyAngularSpeedMagnitude.mean                         | num, tBodyGyroMag mean value  
+TimeDomain.BodyAngularSpeedMagnitude.StandardDeviation            | num, tBodyGyroMag Standard Deviation value  
+TimeDomain.BodyAngularAccelerationMagnitude.mean                  | num, tBodyGyroJerkMag mean value  
+TimeDomain.BodyAngularAccelerationMagnitude.StandardDeviation     | num, tBodyGyroJerkMag Standard Deviation value  
+FrequencyDomain.BodyAcceleration.mean.X                           | num, fBodyAcc-X mean value  
+FrequencyDomain.BodyAcceleration.mean.Y                           | num, fBodyAcc-Y mean value   
+FrequencyDomain.BodyAcceleration.mean.Z                           | num, fBodyAcc-Z mean value    
+FrequencyDomain.BodyAcceleration.StandardDeviation.X              | num, fBodyAcc-X Standard Deviation value  
+FrequencyDomain.BodyAcceleration.StandardDeviation.Y              | num, fBodyAcc-Y Standard Deviation value  
+FrequencyDomain.BodyAcceleration.StandardDeviation.Z              | num, fBodyAcc-Z Standard Deviation value  
+FrequencyDomain.BodyAcceleration.meanFrequency.X                  | num, fBodyAcc-meanFreq-X  
+FrequencyDomain.BodyAcceleration.meanFrequency.Y                  | num, fBodyAcc-meanFreq-Y   
+FrequencyDomain.BodyAcceleration.meanFrequency.Z                  | num, fBodyAcc-meanFreq-Z   
+FrequencyDomain.BodyAccelerationJerk.mean.X                       | num, fBodyAccJerk-X mean value  
+FrequencyDomain.BodyAccelerationJerk.mean.Y                       | num, fBodyAccJerk-Y mean value   
+FrequencyDomain.BodyAccelerationJerk.mean.Z                       | num, fBodyAccJerk-X mean value   
+FrequencyDomain.BodyAccelerationJerk.StandardDeviation.X          | num, fBodyAccJerk-X Standard Deviation value  
+FrequencyDomain.BodyAccelerationJerk.StandardDeviation.Y          | num, fBodyAccJerk-Y Standard Deviation value  
+FrequencyDomain.BodyAccelerationJerk.StandardDeviation.Z          | num, fBodyAccJerk-Z Standard Deviation value 
+FrequencyDomain.BodyAccelerationJerk.meanFrequency.X              | num, fBodyAccJerk-meanFreq-X  
+FrequencyDomain.BodyAccelerationJerk.meanFrequency.Y              | num, fBodyAccJerk-meanFreq-Y   
+FrequencyDomain.BodyAccelerationJerk.meanFrequency.Z              | num, fBodyAccJerk-meanFreq-Z   
+FrequencyDomain.BodyAngularSpeed.mean.X                           | num, fBodyGyro-X mean value  
+FrequencyDomain.BodyAngularSpeed.mean.Y                           | num, fBodyGyro-Y mean value  
+FrequencyDomain.BodyAngularSpeed.mean.Z                           | num, fBodyGyro-Z mean value  
+FrequencyDomain.BodyAngularSpeed.StandardDeviation.X              | num, fBodyGyro-X Standard Deviation value  
+FrequencyDomain.BodyAngularSpeed.StandardDeviation.Y              | num, fBodyGyro-Y Standard Deviation value   
+FrequencyDomain.BodyAngularSpeed.StandardDeviation.Z              | num, fBodyGyro-Z Standard Deviation value   
+FrequencyDomain.BodyAngularSpeed.meanFrequency.X                  | num, fBodyGyro-meanFreq-X  
+FrequencyDomain.BodyAngularSpeed.meanFrequency.Y                  | num, fBodyGyro-meanFreq-Y   
+FrequencyDomain.BodyAngularSpeed.meanFrequency.Z                  | num, fBodyGyro-meanFreq-Z    
+FrequencyDomain.BodyAccelerationMagnitude.mean                    | num, fBodyAccMag mean value   
+FrequencyDomain.BodyAccelerationMagnitude.StandardDeviation       | num, fBodyAccMag Standard Deviation value   
+FrequencyDomain.BodyAccelerationMagnitude.meanFrequency           | num, fBodyAccMag-meanFreq   
+FrequencyDomain.BodyAccelerationJerkMagnitude.mean                | num, fBodyAccJerkMag mean value  
+FrequencyDomain.BodyAccelerationJerkMagnitude.StandardDeviation   | num, fBodyAccMag Standard Deviation value  
+FrequencyDomain.BodyAccelerationJerkMagnitude.meanFrequency       | num, fBodyAccJerkMag-meanFreq  
+FrequencyDomain.BodyAngularSpeedMagnitude.mean                    | num, fBodyGyroMag mean value  
+FrequencyDomain.BodyAngularSpeedMagnitude.StandardDeviation       | num, fBodyGyroMag Standard Deviation value  
+FrequencyDomain.BodyAngularSpeedMagnitude.meanFrequency           | num, fBodyGyroMag-meanFreq  
+FrequencyDomain.BodyAngularAccelerationMagnitude.mean             | num, fBodyGyroJerkMag mean value  
+FrequencyDomain.BodyAngularAccelerationMagnitude.StandardDeviation| num, fBodyGyroJerkMag Standard Deviation value 
+FrequencyDomain.BodyAngularAccelerationMagnitude.meanFrequency    | num, fBodyGyroJerkMag-meanFreq  
 Subject                                                           | int  subject ID, value: 1-30
 Activity                                                          | chr w/ 6 levels (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
