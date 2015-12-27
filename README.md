@@ -50,7 +50,7 @@ Note 4: Use "head(data)" to review results and capture the indices of the last t
 ### Step 2: Extracts only the measurements on the mean and standard deviation for each measurement per subject & activity
 * data.mean_std <- data[,grepl("mean|std|Subject|Activity.ID", names(data))]
 
-### Step 3: Use descriptive activity names to name the activities in the data set. First, joint the data with the activity labels and * * delete the last column created by join operation
+### Step 3: Use descriptive activity names to name the activities in the data set. First, joint the data with the activity labels and  delete the last column created by join operation
 * data.mean_std = join(data.mean_std, activity.labels, by = "Activity.ID", match = "first")
 * data.mean_std = data.mean_std[,-1]
 
