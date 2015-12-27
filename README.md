@@ -1,6 +1,12 @@
 # Script:  run_analysis.R
 # Version: 1.0
 
+Note: It is easier to fork the github repo, then source "run_analysis.R"
+
+https://github.com/melghazali/GettingAndCleaningData.git
+
+Otherwise, follow the following steps to generate the tidy data file.
+
 ## Step 0: Load raw data
 Before running this script, perform the following:
 
