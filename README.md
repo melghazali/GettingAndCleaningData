@@ -54,6 +54,11 @@ Note 4: Use "head(data)" to review results and capture the indices of the last t
 * data.mean_std = join(data.mean_std, activity.labels, by = "Activity.ID", match = "first")
 * data.mean_std = data.mean_std[,-1]
 
+Note 5: Remove pran's () and make valid names
+* names(data.mean_std) = gsub('\\(|\\)',"",names(data.mean_std), perl = TRUE)
+* names(data.mean_std) = make.names(names(data.mean_std))
+
+
 ### Step 4: Appropriately labels the data set with descriptive variable names. 
 * names(data.mean_std) = gsub('^t',"TimeDomain.",names(data.mean_std))
 * names(data.mean_std) = gsub('^f',"FrequencyDomain.",names(data.mean_std))
@@ -64,9 +69,6 @@ Note 4: Use "head(data)" to review results and capture the indices of the last t
 * names(data.mean_std) = gsub('Mag',"Magnitude",names(data.mean_std))
 * names(data.mean_std) = gsub('meanFreq',"meanFrequency",names(data.mean_std), ignore.case = TRUE)
 * names(data.mean_std) = gsub('std',"StandardDeviation",names(data.mean_std))
-
-Note 5: Remove pran's ()
-* names(data.mean_std) = gsub('\\(|\\)',"",names(data.mean_std), perl = TRUE)
 
 ### Step 5: From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 * data.avg_by_subject = ddply(data.mean_std, c("Subject","Activity"), numcolwise(mean))
