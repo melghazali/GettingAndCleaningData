@@ -61,7 +61,7 @@ Step 1: Merge the training and the test sets to create short form data set throu
 
 Step 2: Extracts only the measurements on the mean and standard deviation for each measurement per subject & activity
 
-Step 3: Use descriptive activity names to name the activities in the data set. First, joint the data with the activity labels and delete the last column created by join operation
+Step 3: Use descriptive activity names to name the activities in the data set. First, join the data with the activity labels and delete the last column created by join operation
 
 Step 4: Appropriately labels the data set with descriptive variable names using the following transformation: 
 
